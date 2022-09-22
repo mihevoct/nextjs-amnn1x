@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <button>click Me</button>
+      <button onClick>count is: {count}</button>
     </div>
   );
 }
