@@ -5,9 +5,13 @@ import { useState } from 'react';
 export default function Home() {
   const [count, setCount] = useState(0);
 
+  function increment() {
+    setCount(count + 1);
+  }
+
   return (
     <div className={styles.container}>
-      <button onClick>count is: {count}</button>
+      <button onClick={increment}>count is: {count}</button>
     </div>
   );
 }
