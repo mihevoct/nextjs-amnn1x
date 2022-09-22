@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <button onClick={increment}>count is: {count}</button>
+      <button onClick={increment()}>count is: {count}</button>
     </div>
   );
 }
